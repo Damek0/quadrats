@@ -1,4 +1,4 @@
-let score = 1100;
+let score = 0;
 let work = Math.ceil(1);
 let time = 1000
 
