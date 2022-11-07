@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <title>app</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img onclick="settings()" class="settings" src="img/settings.png">
+        <h1 class="score">Coins 0</h1>
+        <section id="box-" class="s-none">
+            <img onclick="clos()" class="close" src="img/close.png">
+            <div class="settings-">
+                <h1 id="h-s" >settings</h1>
+                <h3 class="categories">general</h3>
+                <div onclick="circle()" class="circle">
+                    <p class="text-m">circle</p>
+                </div>
+                <div onclick="quadrat()" class="quadrat">
+                    <p class="text-m">quadrat</p>
+                </div>
+                <h4 class="descriptions">type name your quadrat</h4>
+                <div class="search">
+                    <input type="text" class="input1">
+                    <button onclick="sumbit()" class="sumbit" type="button">Sumbit</button>
+                </div>
+                <h3>Colors</h3>
+                <div onclick="red()" id="square-red" class="squares">
+                    <p class="text-m">red</p>
+                </div>
+                <div onclick="yellow()" id="square-yellow" class="squares">
+                    <p class="text-m">yellow</p>
+                </div>
+                <div onclick="green()" id="square-green" class="squares">
+                    <p class="text-m">green</p>
+                </div>
+                <div onclick="blue()" id="square-blue" class="squares">
+                    <p class="text-m">blue</p>
+                </div>
+            </div>
+            <div class="upgrades-">
+                <h1>Upgrades</h1>
+                <h3 class="categories1">Speed</h3>
+                <div class="speed1">
+                    <div onclick="speed1()" id="x1" class="speed-xp"><p>1 lvl</p></div>
+                    <div onclick="speed2()" id="x2" class="speed-xp"><p>2 lvl</p></div>
+                    <div onclick="speed3()" id="x3" class="speed-xp"><p>3 lvl</p></div>
+                    <div onclick="speed4()" id="x4" class="speed-xp"><p>4 lvl</p></div>
+                    <div onclick="speed5()" id="x5" class="speed-xp"><p>5 lvl</p></div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <div class="box">
+                <p class="main-text">name</p>
+            </div>
+        </main>
+        <div class="startx">
+            <button onclick="start()" type="button" class="starts">Start</button>
+        </div>
+    </body>
+</html>
