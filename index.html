@@ -9,8 +9,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img onclick="settings()" class="settings" src="img/settings.png">
-        <h1 class="score">Coins 0</h1>
+        <div class="bar">
+            <img id="tooth" onclick="settings()" class="settings" src="img/settings.png">
+            <h1 id="score-" class="score">Money 0</h1>
+        </div>
         <section id="box-" class="s-none">
             <img onclick="clos()" class="close" src="img/close.png">
             <div class="settings-">
@@ -22,9 +24,9 @@
                 <div onclick="quadrat()" class="quadrat">
                     <p class="text-m">quadrat</p>
                 </div>
-                <h4 class="descriptions">type name your quadrat</h4>
+                <h4 class="descriptions">type name your object</h4>
                 <div class="search">
-                    <input type="text" class="input1">
+                    <input alt="Type..." type="text" class="input1">
                     <button onclick="sumbit()" class="sumbit" type="button">Sumbit</button>
                 </div>
                 <h3>Colors</h3>
@@ -52,10 +54,19 @@
                     <div onclick="speed5()" id="x5" class="speed-xp"><p>5 lvl</p></div>
                 </div>
             </div>
+            <div class="prices">
+                <p class="price">100</p>
+                <p class="price">300</p>
+                <p class="price">500</p>
+                <p class="price">700</p>
+                <p class="price">900</p>
+            </div>
         </section>
         <main>
-            <div class="box">
-                <p class="main-text">name</p>
+            <div class="border-box">
+                <div class="box">
+                    <marquee><p class="main-text">name</p></marquee>
+                </div>
             </div>
         </main>
         <div class="startx">
